@@ -4,12 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk 32
-
+    compileSdk 34
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
+        namespace = "cc.aoeiuv020.iamnotdisabled"
         applicationId "cc.aoeiuv020.iamnotdisabled"
         minSdk 26
-        targetSdk 32
+        targetSdk 34
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 

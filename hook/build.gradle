@@ -3,12 +3,15 @@ plugins {
 }
 
 android {
-    compileSdk 32
-
+    compileSdk 35
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
+        namespace = "cc.aoeiuv020.iamnotdisabled.hook"
         applicationId "cc.aoeiuv020.iamnotdisabled.hook"
         minSdk 26
-        targetSdk 32
+        targetSdk 34
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
